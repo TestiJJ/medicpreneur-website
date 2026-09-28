@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambassador Program | MedicPreneur - Lead Healthcare Innovation on Campus</title>
+  <meta name="description" content="Become a MedicPreneur Campus or Country Ambassador. Lead health entrepreneurship clubs, host local masterclasses, and represent Africa's fastest-growing clinician movement.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="navbar-wrapper" id="site-header">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand" aria-label="MedicPreneur Home">
+        <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="navbar-links" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="programs.html" class="nav-item">Programs</a></li>
+          <li><a href="academy.html" class="nav-item">Academy</a></li>
+          <li><a href="fellowship.html" class="nav-item">Fellowship</a></li>
+          <li><a href="events.html" class="nav-item">Events</a></li>
+          <li><a href="chapters.html" class="nav-item">Chapters</a></li>
+          <li><a href="partners.html" class="nav-item">Partners</a></li>
+          <li><a href="blog.html" class="nav-item">Insights</a></li>
+          <li><a href="faq.html" class="nav-item">FAQ</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-controls">
+        <a href="apply.html" class="global-cta-btn">
+          <span>Join / Apply</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+
+        <button id="mobile-toggle-btn" class="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+      <div class="drawer-header-row">
+        <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" class="drawer-brand-img">
+        <button id="close-drawer-btn" class="drawer-close-btn">&times;</button>
+      </div>
+
+      <nav class="drawer-links-nav">
+        <ul class="drawer-menu-list">
+          <li><a href="index.html" class="drawer-link">Home</a></li>
+          <li><a href="about.html" class="drawer-link">About Us &amp; Founder's Vision</a></li>
+          <li><a href="programs.html" class="drawer-link">Programs &amp; Bootcamp</a></li>
+          <li><a href="academy.html" class="drawer-link">MedicPreneur Academy</a></li>
+          <li><a href="fellowship.html" class="drawer-link">Fellowship Program</a></li>
+          <li><a href="ambassadors.html" class="drawer-link active">Ambassador Network</a></li>
+          <li><a href="events.html" class="drawer-link">Events &amp; Webinars</a></li>
+          <li><a href="chapters.html" class="drawer-link">African Country Chapters</a></li>
+          <li><a href="partners.html" class="drawer-link">Partners &amp; Deck</a></li>
+          <li><a href="blog.html" class="drawer-link">Insights &amp; Stories</a></li>
+          <li><a href="faq.html" class="drawer-link">Frequently Asked Questions</a></li>
+          <li><a href="contact.html" class="drawer-link">Contact &amp; Regional Hubs</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer-footer-row">
+        <a href="apply.html" class="btn btn-burgundy btn-full">Join the Community / Apply</a>
+      </div>
+    </div>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+  <main>
+    <!-- Page Hero Header -->
+    <section class="page-hero-header">
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li><a href="index.html">Home</a></li>
+          <li><span>/</span></li>
+          <li><span>Ambassador Program</span></li>
+        </ul>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+          <div>
+            <h1 class="page-title">The Ambassador Program</h1>
+            <p class="page-subtitle">
+              Become the official face and driving force of MedicPreneur at your medical school, college of pharmacy, or health university.
+            </p>
+          </div>
+          <div>
+            <span id="ambassador-badge" class="status-badge open">
+              <span class="badge-dot"></span> Applications Open
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         1. WHAT AMBASSADORS DO, BENEFITS, EXPECTATIONS (PRD 6.5)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: #FFFFFF;">
+      <div class="container">
+        <!-- Live Admin Status Toggle (PRD 6.5 Requirement) -->
+        <div class="status-toggle-card reveal-on-scroll">
+          <div>
+            <span class="switch-label">Live Application Status Control</span>
+            <p style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 2px;">
+              Admin preview toggle: Switch between "Applications Open" (Full Application Form) and "Applications Closed" ("Notify Me" capture).
+            </p>
+          </div>
+          <label class="status-switch">
+            <input type="checkbox" id="ambassador-status-toggle" checked>
+            <span class="slider-round"></span>
+          </label>
+        </div>
+
+        <div class="responsive-grid-2" style="margin-bottom: 60px;">
+          <div class="reveal-on-scroll">
+            <span class="eyebrow-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>STUDENT LEADERSHIP CORPS</span>
+            </span>
+            <h2 class="section-heading">Lead the Healthcare Business Shift on Your Campus</h2>
+            <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">
+              MedicPreneur Ambassadors are student changemakers who understand that clinical training alone isn't enough. They mobilize peers, organize local watch parties for our webinars, represent our programs, and build the foundational chapters of tomorrow.
+            </p>
+            <p style="font-size: 1.02rem; color: var(--text-secondary); line-height: 1.7;">
+              In return, ambassadors receive executive mentorship directly from Founder Moses Adetoro, full scholarship access to Academy courses, priority consideration for the Fellowship, and official leadership credentialing recognized across Africa.
+            </p>
+          </div>
+
+          <div class="reveal-on-scroll">
+            <div style="background: linear-gradient(135deg, var(--burgundy-deep) 0%, var(--burgundy-primary) 100%); padding: clamp(26px, 3.5vw, 36px); border-radius: var(--radius-xl); color: #FFFFFF; box-shadow: var(--shadow-card); border: 1.5px solid rgba(208, 228, 255, 0.25);">
+              <span class="flagship-eyebrow" style="background: var(--blue-light); color: var(--burgundy-deep); margin-bottom: 16px;">
+                STUDENT LEADERSHIP INITIATIVE (SLI)
+              </span>
+              <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: #FFFFFF; margin-bottom: 12px; line-height: 1.3;">
+                Pioneering Healthcare Enterprise on 50+ African Campuses
+              </h3>
+              <p style="color: #CBD5E1; font-size: 0.92rem; line-height: 1.6; margin-bottom: 22px;">
+                Our ambassador network represents the elite vanguard of medical and pharmacy students mobilizing the continental ecosystem from the ground up.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 22px;">
+                <div style="display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: #F1F5F9;">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--blue-light)" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>100% Tuition Waiver on Academy Diplomas</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: #F1F5F9;">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--blue-light)" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Monthly Executive Advisory with Moses Adetoro</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: #F1F5F9;">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--blue-light)" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Fast-Track Admission to The Fellowship</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: #F1F5F9;">
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--blue-light)" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Official Continental Leadership Credential</span>
+                </div>
+              </div>
+              <a href="#apply" class="btn btn-light-blue btn-full btn-sm">
+                <span>Apply for Ambassadorship</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Key Pillars: Role, Benefits, Requirements -->
+        <div class="what-we-do-grid" style="margin-bottom: 60px;">
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </span>
+              <span class="status-badge open">Campus Leadership</span>
+            </div>
+            <h3>What Ambassadors Do</h3>
+            <ul style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 8px;">
+              <li>&bull; Host on-campus watch parties and workshops for MedicPreneur webinars.</li>
+              <li>&bull; Share cohort announcements and masterclasses in medical student WhatsApp groups.</li>
+              <li>&bull; Connect university leadership and medical associations to our national chapter leads.</li>
+              <li>&bull; Pioneer local student healthcare venture discussions.</li>
+            </ul>
+          </div>
+
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
+              </span>
+              <span class="status-badge open">Perks &amp; Growth</span>
+            </div>
+            <h3>Exclusive Benefits</h3>
+            <ul style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 8px;">
+              <li>&bull; Full scholarship access to MedicPreneur Academy cohort courses.</li>
+              <li>&bull; Direct monthly mentorship calls with Founder Moses Adetoro.</li>
+              <li>&bull; Fast-tracked consideration for the prestigious MedicPreneur Fellowship.</li>
+              <li>&bull; Official certificate of leadership &amp; recommendation letter for residencies/scholarships.</li>
+            </ul>
+          </div>
+
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </span>
+              <span class="status-badge upcoming">Requirements</span>
+            </div>
+            <h3>Expectations &amp; Requirements</h3>
+            <ul style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 8px;">
+              <li>&bull; Currently enrolled healthcare student in any accredited African university.</li>
+              <li>&bull; Active, credible presence within campus student bodies (FAMSA, OSAG, NOSA, etc.).</li>
+              <li>&bull; Ability to commit 2&ndash;3 hours per week to campus engagement.</li>
+              <li>&bull; Strong communication skills and enthusiasm for healthcare entrepreneurship.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ==============================================
+             2. APPLICATION FORM (PRD 6.5 & 7.2)
+             ============================================== -->
+        <div id="ambassador-application-container">
+          <!-- State A: Applications Open (Form) -->
+          <div id="ambassador-open-container" class="form-card-wrapper reveal-on-scroll">
+            <div style="text-align: center; margin-bottom: 28px;">
+              <span class="eyebrow-pill">
+                <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                <span>APPLICATION FORM</span>
+              </span>
+              <h2 class="section-heading" style="font-size: 1.85rem;">Apply for Campus Ambassadorship</h2>
+              <p style="font-size: 0.96rem; color: var(--text-secondary);">
+                Join our continental network of student leaders across 13 African countries.
+              </p>
+            </div>
+
+            <form data-medic-form="application" class="modern-form">
+              <!-- Anti-spam Honeypot -->
+              <div class="honeypot-field" aria-hidden="true">
+                <label for="amb-trap">Leave empty</label>
+                <input type="text" id="amb-trap" name="trap_amb" tabindex="-1">
+              </div>
+
+              <input type="hidden" name="program_target" value="Campus Ambassador Program">
+
+              <div class="form-row-2">
+                <div class="input-wrap">
+                  <label for="amb-name">Full Name *</label>
+                  <input type="text" id="amb-name" name="name" required placeholder="Dr. / Mr. / Ms. Jane Doe">
+                </div>
+                <div class="input-wrap">
+                  <label for="amb-email">Email Address *</label>
+                  <input type="email" id="amb-email" name="email" required placeholder="jane@example.com">
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="input-wrap">
+                  <label for="amb-phone">WhatsApp / Phone *</label>
+                  <input type="tel" id="amb-phone" name="phone" required placeholder="+234 ...">
+                </div>
+                <div class="input-wrap">
+                  <label for="amb-country">Country *</label>
+                  <select id="amb-country" name="country" required>
+                    <option value="" disabled selected>Select African Country</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Other">Other African Country</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="input-wrap">
+                  <label for="amb-inst">University / College *</label>
+                  <input type="text" id="amb-inst" name="institution" required placeholder="e.g. University of Lagos, Makerere, UNIBEN">
+                </div>
+                <div class="input-wrap">
+                  <label for="amb-level">Program &amp; Current Academic Year *</label>
+                  <input type="text" id="amb-level" name="profession_level" required placeholder="e.g. Medicine &amp; Surgery (Year 4)">
+                </div>
+              </div>
+
+              <div class="input-wrap">
+                <label for="amb-motivation">Why would you make an exceptional MedicPreneur Ambassador? *</label>
+                <textarea id="amb-motivation" name="motivation" rows="4" required placeholder="Tell us about your campus involvement, clubs or associations you belong to, and how you plan to introduce MedicPreneur to fellow students..."></textarea>
+              </div>
+
+              <div class="consent-check-row">
+                <input type="checkbox" id="amb-consent" name="consent" required checked>
+                <label for="amb-consent">
+                  I agree to commit approximately 2&ndash;3 hours per week to ambassador activities and consent to MedicPreneur reviewing my application.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-burgundy btn-full">
+                <span>Submit Ambassador Application</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- State B: Applications Closed ("Notify Me" Capture, PRD 6.5) -->
+          <div id="ambassador-closed-container" class="form-card-wrapper" style="display: none; text-align: center;">
+            <span class="status-badge closed" style="margin-bottom: 16px;">
+              <span class="badge-dot"></span> Applications Open Soon
+            </span>
+            <h2 class="section-heading" style="font-size: 1.8rem;">Ambassador Admissions Open Soon</h2>
+            <p style="font-size: 1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 24px;">
+              The next intake window for campus ambassadors will open shortly. Drop your email below to get the direct application link the moment it goes live.
+            </p>
+
+            <form data-medic-form="newsletter" style="max-width: 480px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px;">
+              <input type="email" name="notify_email" placeholder="Enter your student email for alert" required style="padding: 13px 18px; border-radius: var(--radius-sm); border: 1.5px solid var(--border-light); font-size: 0.95rem;">
+              <button type="submit" class="btn btn-burgundy">
+                <span>Notify Me When Ambassador Applications Open</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="modern-site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" style="height: 44px; filter: brightness(0) invert(1);">
+          <p>Bridging the gap between medicine and entrepreneurship in Africa.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="fellowship.html">Fellowship</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Continental Reach</h4>
+          <ul class="footer-links-list">
+            <li><a href="chapters.html">13 Country Chapters</a></li>
+            <li><a href="partners.html">Partners &amp; Deck</a></li>
+            <li><a href="events.html">Events &amp; Summit</a></li>
+            <li><a href="apply.html">Join Movement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="tel:+2349064294695" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+234-906-429-4695</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info.medicpreneur@gmail.com" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <span>info.medicpreneur@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="MedicPreneur_LBCP_PARTNERSHIP_PATHWAYS.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                <span>Download Partnership Deck (PDF)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 MedicPreneur. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

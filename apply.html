@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Community &amp; Apply | MedicPreneur Action Gateway</title>
+  <meta name="description" content="Take action with MedicPreneur. Join the continental WhatsApp community, apply to Academy cohorts, join the Fellowship, become a Campus Ambassador, or launch a chapter.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="navbar-wrapper" id="site-header">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand" aria-label="MedicPreneur Home">
+        <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="navbar-links" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="programs.html" class="nav-item">Programs</a></li>
+          <li><a href="academy.html" class="nav-item">Academy</a></li>
+          <li><a href="fellowship.html" class="nav-item">Fellowship</a></li>
+          <li><a href="events.html" class="nav-item">Events</a></li>
+          <li><a href="chapters.html" class="nav-item">Chapters</a></li>
+          <li><a href="partners.html" class="nav-item">Partners</a></li>
+          <li><a href="blog.html" class="nav-item">Insights</a></li>
+          <li><a href="faq.html" class="nav-item">FAQ</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-controls">
+        <a href="apply.html" class="global-cta-btn active">
+          <span>Join / Apply</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+
+        <button id="mobile-toggle-btn" class="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+      <div class="drawer-header-row">
+        <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" class="drawer-brand-img">
+        <button id="close-drawer-btn" class="drawer-close-btn">&times;</button>
+      </div>
+
+      <nav class="drawer-links-nav">
+        <ul class="drawer-menu-list">
+          <li><a href="index.html" class="drawer-link">Home</a></li>
+          <li><a href="about.html" class="drawer-link">About Us &amp; Founder's Vision</a></li>
+          <li><a href="programs.html" class="drawer-link">Programs &amp; Bootcamp</a></li>
+          <li><a href="academy.html" class="drawer-link">MedicPreneur Academy</a></li>
+          <li><a href="fellowship.html" class="drawer-link">Fellowship Program</a></li>
+          <li><a href="ambassadors.html" class="drawer-link">Ambassador Network</a></li>
+          <li><a href="events.html" class="drawer-link">Events &amp; Webinars</a></li>
+          <li><a href="chapters.html" class="drawer-link">African Country Chapters</a></li>
+          <li><a href="partners.html" class="drawer-link">Partners &amp; Deck</a></li>
+          <li><a href="blog.html" class="drawer-link">Insights &amp; Stories</a></li>
+          <li><a href="faq.html" class="drawer-link">Frequently Asked Questions</a></li>
+          <li><a href="contact.html" class="drawer-link">Contact &amp; Regional Hubs</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer-footer-row">
+        <a href="apply.html" class="btn btn-burgundy btn-full">Join the Community / Apply</a>
+      </div>
+    </div>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+  <main>
+    <!-- Page Hero Header -->
+    <section class="page-hero-header">
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li><a href="index.html">Home</a></li>
+          <li><span>/</span></li>
+          <li><span>Action Gateway</span></li>
+        </ul>
+        <h1 class="page-title">Take Action With MedicPreneur</h1>
+        <p class="page-subtitle">
+          Select the pathway that matches your goals: join our free continental network, enroll in an Academy cohort, apply for the Fellowship, become a Campus Ambassador, or pioneer a new chapter.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         1. INTERACTIVE TRACK SELECTOR (PRD 6.13)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <span class="eyebrow-pill">5 COLLABORATIVE PATHWAYS</span>
+          <h2 class="section-heading">Choose Your Action Track</h2>
+          <p class="section-desc">Click any track below to instantly access its dedicated application or access form.</p>
+        </div>
+
+        <div class="application-tracks-grid">
+          <!-- Track 1: Free Community -->
+          <div class="track-select-card active reveal-on-scroll" data-track="community-track">
+            <span class="track-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="var(--burgundy-primary)" stroke-width="2" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </span>
+            <span class="status-badge open" style="margin-bottom: 8px;">Instant Access</span>
+            <h3>1. Join Free Community</h3>
+            <p>Direct entry to our 1,000+ member WhatsApp group, weekly resource digests, and webinar invitations.</p>
+          </div>
+
+          <!-- Track 2: Academy Cohort -->
+          <div class="track-select-card reveal-on-scroll" data-track="academy-track">
+            <span class="track-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="var(--burgundy-primary)" stroke-width="2" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </span>
+            <span class="status-badge open" style="margin-bottom: 8px;">Enrolling Cohort 4</span>
+            <h3>2. Apply to Academy</h3>
+            <p>Join the 10-Session Build Your Business Bootcamp or specialized clinical consulting masterclasses.</p>
+          </div>
+
+          <!-- Track 3: Fellowship -->
+          <div class="track-select-card reveal-on-scroll" data-track="fellowship-track">
+            <span class="track-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="var(--burgundy-primary)" stroke-width="2" fill="none"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </span>
+            <span class="status-badge upcoming" style="margin-bottom: 8px;">15-20 Fellows</span>
+            <h3>3. The Fellowship</h3>
+            <p>Apply for our premier 6-month venture acceleration program with executive career pivot advisory.</p>
+          </div>
+
+          <!-- Track 4: Ambassador -->
+          <div class="track-select-card reveal-on-scroll" data-track="ambassador-track">
+            <span class="track-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="var(--burgundy-primary)" stroke-width="2" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </span>
+            <span class="status-badge open" style="margin-bottom: 8px;">Campus Network</span>
+            <h3>4. Become an Ambassador</h3>
+            <p>Lead the health entrepreneurship movement on your campus and gain direct mentorship from Moses Adetoro.</p>
+          </div>
+
+          <!-- Track 5: Start a Chapter -->
+          <div class="track-select-card reveal-on-scroll" data-track="chapter-track">
+            <span class="track-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" stroke="var(--burgundy-primary)" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </span>
+            <span class="status-badge open" style="margin-bottom: 8px;">Pioneer Status</span>
+            <h3>5. Start a Chapter</h3>
+            <p>Establish a MedicPreneur national or university chapter in your city or country.</p>
+          </div>
+        </div>
+
+        <!-- ==============================================
+             2. DYNAMIC TRACK FORMS & WORKFLOWS
+             ============================================== -->
+        
+        <!-- Track 1: Free Community Access Form -->
+        <div id="community-track" class="track-form-section form-card-wrapper reveal-on-scroll">
+          <div style="text-align: center; margin-bottom: 26px;">
+            <span class="eyebrow-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" style="vertical-align: middle; margin-right: 5px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              COMMUNITY CIRCLE
+            </span>
+            <h2 class="section-heading" style="font-size: 1.85rem;">Join the Pan-African MedicPreneur Community</h2>
+            <p style="font-size: 0.96rem; color: var(--text-secondary);">
+              Connect instantly with fellow medical, pharmacy, nursing, and optometry entrepreneurs across 13 countries.
+            </p>
+          </div>
+
+          <div class="responsive-grid-2" style="align-items: center; gap: 36px;">
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 1.25rem; color: var(--burgundy-primary); margin-bottom: 12px;">
+                What You Get as a Community Member:
+              </h4>
+              <ul style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+                <li>&check; Direct WhatsApp and Telegram network access across 13 African countries</li>
+                <li>&check; Priority invitations to all free webinars, masterclasses, and Q&amp;As</li>
+                <li>&check; Free access to past session slide decks and financial worksheets</li>
+                <li>&check; Weekly job board &amp; health startup co-founder matching</li>
+              </ul>
+              <a href="https://wa.me/2349064294695?text=Hello%20MedicPreneur%2C%20I%20want%20to%20join%20the%20community" target="_blank" class="btn btn-burgundy">
+                <span>Join Official WhatsApp Community Now &rarr;</span>
+              </a>
+            </div>
+
+            <!-- Fast-track registration -->
+            <form data-medic-form="newsletter" class="modern-form" style="background: var(--blue-tint); padding: 24px; border-radius: var(--radius-lg); border: 1.5px solid var(--border-blue);">
+              <div class="honeypot-field" aria-hidden="true">
+                <input type="text" name="comm_trap" tabindex="-1">
+              </div>
+              <h4 style="font-family: var(--font-display); font-size: 1.15rem; color: var(--burgundy-primary);">Or Get Email Invitations</h4>
+              <div class="input-wrap">
+                <label>Your Name *</label>
+                <input type="text" name="name" required placeholder="Dr. / Mr. / Ms. Name">
+              </div>
+              <div class="input-wrap">
+                <label>Your Email Address *</label>
+                <input type="email" name="email" required placeholder="name@example.com">
+              </div>
+              <div class="input-wrap">
+                <label>Country *</label>
+                <select name="country" required>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Other">Other African Country</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-burgundy btn-full">
+                <span>Confirm Community Membership</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Track 2: Academy Application Form -->
+        <div id="academy-track" class="track-form-section form-card-wrapper" style="display: none;">
+          <div style="text-align: center; margin-bottom: 26px;">
+            <span class="eyebrow-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" style="vertical-align: middle; margin-right: 5px;"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              ACADEMY ADMISSIONS
+            </span>
+            <h2 class="section-heading" style="font-size: 1.85rem;">Apply for Academy Cohort 4</h2>
+            <p style="font-size: 0.96rem; color: var(--text-secondary);">
+              Enrolling for the 10-Session Build Your Business Bootcamp and High-Income Skills Accelerator.
+            </p>
+          </div>
+
+          <form data-medic-form="application" class="modern-form">
+            <div class="honeypot-field" aria-hidden="true">
+              <input type="text" name="acad_trap" tabindex="-1">
+            </div>
+            <input type="hidden" name="program_target" value="MedicPreneur Academy Cohort 4">
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label for="ap-name">Full Name *</label>
+                <input type="text" id="ap-name" name="name" required placeholder="Dr. / Mr. / Ms. Full Name">
+              </div>
+              <div class="input-wrap">
+                <label for="ap-email">Email Address *</label>
+                <input type="email" id="ap-email" name="email" required placeholder="jane@example.com">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label for="ap-phone">WhatsApp Phone Number *</label>
+                <input type="tel" id="ap-phone" name="phone" required placeholder="+234 ...">
+              </div>
+              <div class="input-wrap">
+                <label for="ap-country">Country *</label>
+                <select id="ap-country" name="country" required>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                  <option value="Other">Other African Country</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label for="ap-course">Select Course / Program *</label>
+                <select id="ap-course" name="course_choice" required>
+                  <option value="Build Your Business Bootcamp (10 Sessions)">Build Your Business Bootcamp (10 Sessions)</option>
+                  <option value="Healthcare Financial Literacy &amp; Wealth">Healthcare Financial Literacy &amp; Wealth</option>
+                  <option value="Clinical Content &amp; Consulting Retainers">Clinical Content &amp; Consulting Retainers</option>
+                  <option value="Starting a Private Clinic / Lab">Starting a Private Clinic / Lab</option>
+                  <option value="Health-Tech Product Strategy">Health-Tech Product Strategy</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <label for="ap-institution">Institution / University *</label>
+                <input type="text" id="ap-institution" name="institution" required placeholder="e.g. UNIBEN, UNZA, KNUST">
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <label for="ap-motivation">Why are you applying and what healthcare problem do you want to solve? *</label>
+              <textarea id="ap-motivation" name="motivation" rows="3" required placeholder="Share your motivation and venture goals..."></textarea>
+            </div>
+
+            <div class="consent-check-row">
+              <input type="checkbox" id="ap-consent" name="consent" required checked>
+              <label for="ap-consent">I agree to receive admission notifications and schedule interviews.</label>
+            </div>
+
+            <button type="submit" class="btn btn-burgundy btn-full">
+              <span>Submit Academy Application</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Track 3: Fellowship Application Form -->
+        <div id="fellowship-track" class="track-form-section form-card-wrapper" style="display: none;">
+          <div style="text-align: center; margin-bottom: 26px;">
+            <span class="eyebrow-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" style="vertical-align: middle; margin-right: 5px;"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              FELLOWSHIP COHORT
+            </span>
+            <h2 class="section-heading" style="font-size: 1.85rem;">Apply for the MedicPreneur Fellowship</h2>
+            <p style="font-size: 0.96rem; color: var(--text-secondary);">
+              Prestigious 6-month venture acceleration for 15&ndash;20 African healthcare innovators.
+            </p>
+          </div>
+
+          <form data-medic-form="application" class="modern-form">
+            <div class="honeypot-field" aria-hidden="true">
+              <input type="text" name="fel_trap2" tabindex="-1">
+            </div>
+            <input type="hidden" name="program_target" value="MedicPreneur Fellowship">
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label>Full Name *</label>
+                <input type="text" name="name" required placeholder="Dr. / Mr. / Ms. Full Name">
+              </div>
+              <div class="input-wrap">
+                <label>Email Address *</label>
+                <input type="email" name="email" required placeholder="jane@example.com">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label>WhatsApp / Phone *</label>
+                <input type="tel" name="phone" required placeholder="+234 ...">
+              </div>
+              <div class="input-wrap">
+                <label>Country *</label>
+                <select name="country" required>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Other">Other African Country</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <label>Current Profession / Academic Level *</label>
+              <input type="text" name="profession_level" required placeholder="e.g. Registered Pharmacist, Final Year Medical Student">
+            </div>
+
+            <div class="input-wrap">
+              <label>Detailed Venture Summary &amp; Traction (PRD 7.2) *</label>
+              <textarea name="motivation" rows="4" required placeholder="Describe your health venture idea, current stage (ideation, MVP, revenue), and how the Fellowship will scale your impact..."></textarea>
+            </div>
+
+            <div class="input-wrap">
+              <label>Pitch Deck / LinkedIn Link (Optional)</label>
+              <input type="text" name="portfolio_url" placeholder="Google Drive, Canva, or LinkedIn profile URL">
+            </div>
+
+            <div class="consent-check-row">
+              <input type="checkbox" name="consent" required checked>
+              <label>I certify that all details submitted are accurate and consent to MedicPreneur reviewing my application.</label>
+            </div>
+
+            <button type="submit" class="btn btn-burgundy btn-full">
+              <span>Submit Fellowship Application</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Track 4: Ambassador Application Form -->
+        <div id="ambassador-track" class="track-form-section form-card-wrapper" style="display: none;">
+          <div style="text-align: center; margin-bottom: 26px;">
+            <span class="eyebrow-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" style="vertical-align: middle; margin-right: 5px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              CAMPUS LEADERSHIP
+            </span>
+            <h2 class="section-heading" style="font-size: 1.85rem;">Apply to Become an Ambassador</h2>
+            <p style="font-size: 0.96rem; color: var(--text-secondary);">
+              Represent MedicPreneur at your college of medicine or healthcare institution.
+            </p>
+          </div>
+
+          <form data-medic-form="application" class="modern-form">
+            <div class="honeypot-field" aria-hidden="true">
+              <input type="text" name="amb_trap2" tabindex="-1">
+            </div>
+            <input type="hidden" name="program_target" value="Campus Ambassador">
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label>Full Name *</label>
+                <input type="text" name="name" required placeholder="Full Name">
+              </div>
+              <div class="input-wrap">
+                <label>Email Address *</label>
+                <input type="email" name="email" required placeholder="jane@example.com">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label>WhatsApp / Phone *</label>
+                <input type="tel" name="phone" required placeholder="+234 ...">
+              </div>
+              <div class="input-wrap">
+                <label>University / Medical College *</label>
+                <input type="text" name="institution" required placeholder="e.g. Makerere, UNILAG, KNUST">
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <label>Why would you make an exceptional MedicPreneur Ambassador? *</label>
+              <textarea name="motivation" rows="3" required placeholder="Share your campus leadership experience and ideas to organize local masterclasses..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-burgundy btn-full">
+              <span>Submit Ambassador Application</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Track 5: Start a Chapter Form -->
+        <div id="chapter-track" class="track-form-section form-card-wrapper" style="display: none;">
+          <div style="text-align: center; margin-bottom: 26px;">
+            <span class="eyebrow-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" style="vertical-align: middle; margin-right: 5px;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              PIONEER A CHAPTER
+            </span>
+            <h2 class="section-heading" style="font-size: 1.85rem;">Propose a New Country or Campus Chapter</h2>
+            <p style="font-size: 0.96rem; color: var(--text-secondary);">
+              Bring MedicPreneur to your institution and lead a national health entrepreneurship chapter.
+            </p>
+          </div>
+
+          <form data-medic-form="chapter" class="modern-form">
+            <div class="honeypot-field" aria-hidden="true">
+              <input type="text" name="chap_trap2" tabindex="-1">
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label>Your Name *</label>
+                <input type="text" name="name" required placeholder="Dr. / Mr. / Ms. Name">
+              </div>
+              <div class="input-wrap">
+                <label>Email Address *</label>
+                <input type="email" name="email" required placeholder="jane@example.com">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label>Proposed Country *</label>
+                <input type="text" name="country" required placeholder="e.g. Rwanda, Senegal, Botswana">
+              </div>
+              <div class="input-wrap">
+                <label>Institution / City *</label>
+                <input type="text" name="institution" required placeholder="e.g. University of Kigali">
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <label>Why and How do you plan to pioneer this chapter? (PRD 7.6) *</label>
+              <textarea name="why" rows="4" required placeholder="Share your vision, student associations you work with, and expected launch timeline..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-burgundy btn-full">
+              <span>Submit Chapter Pioneer Proposal</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="modern-site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" style="height: 44px; filter: brightness(0) invert(1);">
+          <p>Bridging the gap between medicine and entrepreneurship in Africa.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="academy.html">Academy</a></li>
+            <li><a href="apply.html">Action Gateway</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Action Pathways</h4>
+          <ul class="footer-links-list">
+            <li><a href="apply.html#community">Free Community</a></li>
+            <li><a href="apply.html#academy">Academy Cohort</a></li>
+            <li><a href="fellowship.html">The Fellowship</a></li>
+            <li><a href="ambassadors.html">Ambassador Network</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="tel:+2349064294695" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+234-906-429-4695</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info.medicpreneur@gmail.com" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <span>info.medicpreneur@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="MedicPreneur_LBCP_PARTNERSHIP_PATHWAYS.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                <span>Download Partnership Deck (PDF)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 MedicPreneur. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

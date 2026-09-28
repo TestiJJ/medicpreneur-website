@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continental Chapters | MedicPreneur - 13+ African Nations Network</title>
+  <meta name="description" content="Discover MedicPreneur country chapters across 13+ African nations. Connect with national chapter presidents or apply to pioneer a chapter at your institution.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="navbar-wrapper" id="site-header">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand" aria-label="MedicPreneur Home">
+        <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="navbar-links" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="programs.html" class="nav-item">Programs</a></li>
+          <li><a href="academy.html" class="nav-item">Academy</a></li>
+          <li><a href="fellowship.html" class="nav-item">Fellowship</a></li>
+          <li><a href="events.html" class="nav-item">Events</a></li>
+          <li><a href="chapters.html" class="nav-item active">Chapters</a></li>
+          <li><a href="partners.html" class="nav-item">Partners</a></li>
+          <li><a href="blog.html" class="nav-item">Insights</a></li>
+          <li><a href="faq.html" class="nav-item">FAQ</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-controls">
+        <a href="apply.html" class="global-cta-btn">
+          <span>Join / Apply</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+
+        <button id="mobile-toggle-btn" class="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+      <div class="drawer-header-row">
+        <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" class="drawer-brand-img">
+        <button id="close-drawer-btn" class="drawer-close-btn">&times;</button>
+      </div>
+
+      <nav class="drawer-links-nav">
+        <ul class="drawer-menu-list">
+          <li><a href="index.html" class="drawer-link">Home</a></li>
+          <li><a href="about.html" class="drawer-link">About Us &amp; Founder's Vision</a></li>
+          <li><a href="programs.html" class="drawer-link">Programs &amp; Bootcamp</a></li>
+          <li><a href="academy.html" class="drawer-link">MedicPreneur Academy</a></li>
+          <li><a href="fellowship.html" class="drawer-link">Fellowship Program</a></li>
+          <li><a href="ambassadors.html" class="drawer-link">Ambassador Network</a></li>
+          <li><a href="events.html" class="drawer-link">Events &amp; Webinars</a></li>
+          <li><a href="chapters.html" class="drawer-link active">African Country Chapters</a></li>
+          <li><a href="partners.html" class="drawer-link">Partners &amp; Deck</a></li>
+          <li><a href="blog.html" class="drawer-link">Insights &amp; Stories</a></li>
+          <li><a href="faq.html" class="drawer-link">Frequently Asked Questions</a></li>
+          <li><a href="contact.html" class="drawer-link">Contact &amp; Regional Hubs</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer-footer-row">
+        <a href="apply.html" class="btn btn-burgundy btn-full">Join the Community / Apply</a>
+      </div>
+    </div>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+  <main>
+    <!-- Page Hero Header -->
+    <section class="page-hero-header">
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li><a href="index.html">Home</a></li>
+          <li><span>/</span></li>
+          <li><span>Chapters Directory</span></li>
+        </ul>
+        <h1 class="page-title">Pan-African Country Chapters</h1>
+        <p class="page-subtitle">
+          Active student chapters across 13 nations powering Africa's healthcare innovation ecosystem. Connect with your chapter president or launch one at your university.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         1. INTERACTIVE CHAPTERS SEARCH & FILTER (PRD 6.8)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: #FFFFFF;">
+      <div class="container">
+        <!-- Africa Chapters Map Showcase -->
+        <div class="card-glass-glow reveal-on-scroll" style="margin-bottom: 36px; padding: 28px; border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(208, 228, 255, 0.45) 0%, rgba(255, 255, 255, 0.95) 100%); border: 1.5px solid rgba(102, 25, 62, 0.12);">
+          <div class="responsive-grid-2" style="align-items: center; gap: 32px;">
+            <div>
+              <span class="eyebrow-pill">CONTINENTAL PRESENCE</span>
+              <h2 class="section-heading" style="font-size: 1.9rem; margin-bottom: 12px;">Active Across 13 African Nations</h2>
+              <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 16px;">
+                MedicPreneur chapters unite medical schools, student doctor syndicates, and health innovations across West, Southern, East, and North/Central Africa. Each chapter drives grassroots training, local symposiums, and venture building.
+              </p>
+              <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div>
+                  <strong style="font-size: 1.7rem; color: var(--burgundy-primary); font-family: var(--font-heading); display: block;">13</strong>
+                  <span style="font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Active Nations</span>
+                </div>
+                <div>
+                  <strong style="font-size: 1.7rem; color: var(--burgundy-primary); font-family: var(--font-heading); display: block;">4</strong>
+                  <span style="font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Regional Hubs</span>
+                </div>
+                <div>
+                  <strong style="font-size: 1.7rem; color: var(--burgundy-primary); font-family: var(--font-heading); display: block;">50+</strong>
+                  <span style="font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Medical Schools</span>
+                </div>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <img src="assets/images/africa_map_chart_clean.png" alt="MedicPreneur Africa Chapters Map" style="max-height: 300px; width: auto; max-width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); object-fit: contain;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Search and Filter Bar -->
+        <div class="chapters-search-bar reveal-on-scroll">
+          <div class="search-input-wrap">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+            <input type="text" id="chapter-search" placeholder="Search by country, president name, or institution...">
+          </div>
+
+          <div class="filter-nav">
+            <button class="filter-btn region-filter-btn active" data-region="all">All Africa (13)</button>
+            <button class="filter-btn region-filter-btn" data-region="west">West Africa</button>
+            <button class="filter-btn region-filter-btn" data-region="southern">Southern Africa</button>
+            <button class="filter-btn region-filter-btn" data-region="east">East Africa</button>
+            <button class="filter-btn region-filter-btn" data-region="north-central">North &amp; Central</button>
+          </div>
+        </div>
+
+        <!-- Chapters Grid -->
+        <div class="chapters-grid" id="chapters-list">
+          <!-- 1. Nigeria -->
+          <div class="chapter-card reveal-on-scroll" data-country="nigeria" data-region="west">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">NG</span>
+              <div>
+                <h3 class="chapter-country-name">Nigeria</h3>
+                <span class="chapter-region">West Africa Hub / HQ</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Dr. Okechukwu Clinton</span>
+              <span class="lead-role">Chapter President &bull; UNIBEN Lead</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: NOSA, UNIBEN, UNILAG</p>
+            </div>
+            <a href="mailto:nigeria.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>nigeria.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 2. Ghana -->
+          <div class="chapter-card reveal-on-scroll" data-country="ghana" data-region="west">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">GH</span>
+              <div>
+                <h3 class="chapter-country-name">Ghana</h3>
+                <span class="chapter-region">West Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Nereus Mensah Gyasi</span>
+              <span class="lead-role">Chapter President &bull; KNUST Lead</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: OSAG Ghana, KNUST, UGMS</p>
+            </div>
+            <a href="mailto:ghana.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>ghana.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 3. Zambia -->
+          <div class="chapter-card reveal-on-scroll" data-country="zambia" data-region="southern">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">ZM</span>
+              <div>
+                <h3 class="chapter-country-name">Zambia</h3>
+                <span class="chapter-region">Southern Africa Hub</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Mwamba Chanda &amp; Dr. Tasila Phiri</span>
+              <span class="lead-role">Chapter President &bull; UNZA Lead</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: UNZAMSA, Teledoc Zambia</p>
+            </div>
+            <a href="mailto:zambia.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>zambia.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 4. Kenya -->
+          <div class="chapter-card reveal-on-scroll" data-country="kenya" data-region="east">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">KE</span>
+              <div>
+                <h3 class="chapter-country-name">Kenya</h3>
+                <span class="chapter-region">East Africa Hub</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Dr. Brian Ochieng</span>
+              <span class="lead-role">Chapter President &bull; UoN Lead</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Univ of Nairobi, Moi University</p>
+            </div>
+            <a href="mailto:kenya.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>kenya.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 5. Ethiopia -->
+          <div class="chapter-card reveal-on-scroll" data-country="ethiopia" data-region="east">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">ET</span>
+              <div>
+                <h3 class="chapter-country-name">Ethiopia</h3>
+                <span class="chapter-region">East Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Dr. Naol Mekonnen</span>
+              <span class="lead-role">Chapter President &bull; AAUCHS Lead</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Addis Ababa Univ Health Sciences</p>
+            </div>
+            <a href="mailto:ethiopia.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>ethiopia.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 6. South Africa -->
+          <div class="chapter-card reveal-on-scroll" data-country="south africa" data-region="southern">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">ZA</span>
+              <div>
+                <h3 class="chapter-country-name">South Africa</h3>
+                <span class="chapter-region">Southern Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Zanele Khumalo</span>
+              <span class="lead-role">Chapter President &bull; Wits Health</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Wits University, UCT Health</p>
+            </div>
+            <a href="mailto:sa.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>sa.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 7. Zimbabwe -->
+          <div class="chapter-card reveal-on-scroll" data-country="zimbabwe" data-region="southern">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">ZW</span>
+              <div>
+                <h3 class="chapter-country-name">Zimbabwe</h3>
+                <span class="chapter-region">Southern Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Tinashe Moyo</span>
+              <span class="lead-role">Chapter President &bull; UZCHS</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: University of Zimbabwe</p>
+            </div>
+            <a href="mailto:zimbabwe.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>zimbabwe.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 8. Cameroon -->
+          <div class="chapter-card reveal-on-scroll" data-country="cameroon" data-region="north-central">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">CM</span>
+              <div>
+                <h3 class="chapter-country-name">Cameroon</h3>
+                <span class="chapter-region">Central Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Dr. Jean-Paul Mbarga</span>
+              <span class="lead-role">Chapter President &bull; Yaoundé I</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: FMSB Yaoundé, Univ of Douala</p>
+            </div>
+            <a href="mailto:cameroon.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>cameroon.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 9. Tanzania -->
+          <div class="chapter-card reveal-on-scroll" data-country="tanzania" data-region="east">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">TZ</span>
+              <div>
+                <h3 class="chapter-country-name">Tanzania</h3>
+                <span class="chapter-region">East Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Dr. Baraka Msuya</span>
+              <span class="lead-role">Chapter President &bull; MUHAS</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Muhimbili Univ of Health</p>
+            </div>
+            <a href="mailto:tanzania.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>tanzania.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 10. Uganda -->
+          <div class="chapter-card reveal-on-scroll" data-country="uganda" data-region="east">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">UG</span>
+              <div>
+                <h3 class="chapter-country-name">Uganda</h3>
+                <span class="chapter-region">East Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Isaac Kato</span>
+              <span class="lead-role">Chapter President &bull; Makerere</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Makerere College of Health</p>
+            </div>
+            <a href="mailto:uganda.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>uganda.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 11. Mozambique -->
+          <div class="chapter-card reveal-on-scroll" data-country="mozambique" data-region="southern">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">MZ</span>
+              <div>
+                <h3 class="chapter-country-name">Mozambique</h3>
+                <span class="chapter-region">Southern Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Amilcar Santos</span>
+              <span class="lead-role">Chapter President &bull; UEM</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Eduardo Mondlane University</p>
+            </div>
+            <a href="mailto:mozambique.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>mozambique.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 12. Egypt -->
+          <div class="chapter-card reveal-on-scroll" data-country="egypt" data-region="north-central">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">EG</span>
+              <div>
+                <h3 class="chapter-country-name">Egypt</h3>
+                <span class="chapter-region">North Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Dr. Ahmed Hassan</span>
+              <span class="lead-role">Chapter President &bull; Kasr Al Ainy</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Cairo Univ Faculty of Medicine</p>
+            </div>
+            <a href="mailto:egypt.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>egypt.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- 13. Rwanda -->
+          <div class="chapter-card reveal-on-scroll" data-country="rwanda" data-region="east">
+            <div class="chapter-card-top">
+              <span class="country-badge-tag">RW</span>
+              <div>
+                <h3 class="chapter-country-name">Rwanda</h3>
+                <span class="chapter-region">East Africa</span>
+              </div>
+            </div>
+            <div class="chapter-lead-info">
+              <span class="lead-name">Dr. Marie-Claire Uwase</span>
+              <span class="lead-role">Chapter President &bull; UR CMHS</span>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">Partners: Univ of Rwanda Med School</p>
+            </div>
+            <a href="mailto:rwanda.medicpreneur@gmail.com" class="chapter-contact-link">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align: middle; margin-right: 5px;"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>rwanda.medicpreneur@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. START A CHAPTER FORM (PRD 6.8 & 7.6)
+         ============================================== -->
+    <section id="start-chapter" class="section-spacing" style="background: linear-gradient(135deg, var(--blue-tint) 0%, #FFFFFF 100%);">
+      <div class="container-narrow">
+        <div style="text-align: center; margin-bottom: 32px;" class="reveal-on-scroll">
+          <span class="eyebrow-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            EXPAND OUR CONTINENTAL REACH
+          </span>
+          <h2 class="section-heading">Start a Chapter in Your Country / University</h2>
+          <p class="section-desc">
+            Don't see your institution listed? Pioneer MedicPreneur at your campus and join our continental chapter presidents network.
+          </p>
+        </div>
+
+        <div class="form-card-wrapper reveal-on-scroll">
+          <form data-medic-form="chapter" class="modern-form">
+            <!-- Anti-spam Honeypot -->
+            <div class="honeypot-field" aria-hidden="true">
+              <label for="chapter-trap">Leave empty</label>
+              <input type="text" id="chapter-trap" name="trap_chapter" tabindex="-1">
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label for="ch-name">Your Full Name *</label>
+                <input type="text" id="ch-name" name="name" required placeholder="Dr. / Mr. / Ms. Jane Doe">
+              </div>
+              <div class="input-wrap">
+                <label for="ch-email">Email Address *</label>
+                <input type="email" id="ch-email" name="email" required placeholder="jane@example.com">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label for="ch-country">Country of Proposed Chapter *</label>
+                <select id="ch-country" name="country" required>
+                  <option value="" disabled selected>Select African Country</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Ivory Coast">Ivory Coast</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Namibia">Namibia</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Liberia">Liberia</option>
+                  <option value="Other">Other African Nation</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <label for="ch-institution">University or Medical College *</label>
+                <input type="text" id="ch-institution" name="institution" required placeholder="e.g. University of Cape Town, Makerere">
+              </div>
+            </div>
+
+            <div class="input-wrap">
+              <label for="ch-why">Why do you want to launch a MedicPreneur Chapter? (PRD 7.6) *</label>
+              <textarea id="ch-why" name="why" rows="4" required placeholder="Describe the current gap in business education at your university, leadership roles you hold, and your plan to mobilize 50+ students..."></textarea>
+            </div>
+
+            <div class="consent-check-row">
+              <input type="checkbox" id="ch-consent" name="consent" required checked>
+              <label for="ch-consent">
+                I consent to the Chapters Coordination Team reviewing my submission and reaching out for an interview.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-burgundy btn-full">
+              <span>Submit Chapter Launch Proposal</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="modern-site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" style="height: 44px; filter: brightness(0) invert(1);">
+          <p>Bridging the gap between medicine and entrepreneurship in Africa.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="chapters.html">13 Country Chapters</a></li>
+            <li><a href="partners.html">Partners &amp; Deck</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Regional Hubs</h4>
+          <ul class="footer-links-list">
+            <li><a href="chapters.html">Nigeria HQ</a></li>
+            <li><a href="chapters.html">Zambia Hub</a></li>
+            <li><a href="chapters.html">Ghana Hub</a></li>
+            <li><a href="chapters.html">Kenya Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="tel:+2349064294695" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+234-906-429-4695</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info.medicpreneur@gmail.com" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <span>info.medicpreneur@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="MedicPreneur_LBCP_PARTNERSHIP_PATHWAYS.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                <span>Download Partnership Deck (PDF)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 MedicPreneur. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedicPreneur | Healthcare Entrepreneurship for African Health Professionals</title>
+  <meta name="description" content="MedicPreneur is a healthcare entrepreneurship platform for African health professionals and students, active across 13+ African countries. Bridging clinical training and business acumen.">
+  <link rel="canonical" href="https://medicpreneur.com/">
+
+  <!-- Google Fonts: Plus Jakarta Sans for body, Outfit for headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ==============================================
+       NAVBAR (Clean, Responsive, Zero Emojis)
+       ============================================== -->
+  <header class="navbar-wrapper" id="site-header">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand" aria-label="MedicPreneur Home">
+        <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="navbar-links" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-item active">Home</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="programs.html" class="nav-item">Programs</a></li>
+          <li><a href="academy.html" class="nav-item">Academy</a></li>
+          <li><a href="fellowship.html" class="nav-item">Fellowship</a></li>
+          <li><a href="events.html" class="nav-item">Events</a></li>
+          <li><a href="chapters.html" class="nav-item">Chapters</a></li>
+          <li><a href="partners.html" class="nav-item">Partners</a></li>
+          <li><a href="blog.html" class="nav-item">Insights</a></li>
+          <li><a href="faq.html" class="nav-item">FAQ</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Global CTA & Mobile Hamburger -->
+      <div class="navbar-controls">
+        <a href="apply.html" class="global-cta-btn">
+          <span>Join / Apply</span>
+          <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+
+        <button id="mobile-toggle-btn" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+          <span class="nav-icon-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-out Drawer (Direct child of body to prevent stacking context clipping) -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+    <div class="drawer-header-row">
+      <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" class="drawer-brand-img">
+      <button id="close-drawer-btn" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <nav class="drawer-links-nav">
+      <ul class="drawer-menu-list">
+        <li><a href="index.html" class="drawer-link active">Home</a></li>
+        <li><a href="about.html" class="drawer-link">About Us &amp; Founder's Vision</a></li>
+        <li><a href="programs.html" class="drawer-link">Programs &amp; Bootcamp</a></li>
+        <li><a href="academy.html" class="drawer-link">MedicPreneur Academy</a></li>
+        <li><a href="fellowship.html" class="drawer-link">Fellowship Program</a></li>
+        <li><a href="ambassadors.html" class="drawer-link">Ambassador Network</a></li>
+        <li><a href="events.html" class="drawer-link">Events &amp; Webinars</a></li>
+        <li><a href="chapters.html" class="drawer-link">African Country Chapters</a></li>
+        <li><a href="partners.html" class="drawer-link">Partners &amp; Deck</a></li>
+        <li><a href="blog.html" class="drawer-link">Insights &amp; Stories</a></li>
+        <li><a href="faq.html" class="drawer-link">Frequently Asked Questions</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact &amp; Regional Hubs</a></li>
+      </ul>
+    </nav>
+
+    <div class="drawer-footer-row">
+      <a href="apply.html" class="btn btn-burgundy btn-full">Join the Community / Apply</a>
+    </div>
+  </div>
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+
+  <main>
+    <!-- ==============================================
+         1. HERO SECTION (PRD 6.1)
+         ============================================== -->
+    <section class="front-page-cover-section">
+      <div class="container">
+        <div class="hero-split-grid">
+          <!-- Left Column -->
+          <div class="hero-content-col reveal-on-scroll">
+            <span class="eyebrow-pill">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+              <span>Pan-African Healthcare Entrepreneurship</span>
+            </span>
+            
+            <h1 class="hero-main-title">Bridging Medicine &amp; Entrepreneurship in Africa.</h1>
+            
+            <p class="hero-tagline">
+              Medical schools teach medicine, not how to build something from it.
+            </p>
+            
+            <p class="hero-lead-desc">
+              MedicPreneur equips African healthcare students and clinicians across 13+ nations with practical business acumen, venture incubation, and high-income skills to build sustainable health enterprises alongside academic excellence.
+            </p>
+
+            <div class="hero-actions-row">
+              <a href="apply.html" class="btn btn-burgundy">
+                <span>Join the Community</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+              <a href="academy.html" class="btn btn-light-blue">
+                <span>Explore the Academy</span>
+              </a>
+            </div>
+
+            <div class="hero-meta-line">
+              <a href="tel:+2349064294695" class="hero-meta-link">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+234-906-429-4695</span>
+              </a>
+              <span>&bull;</span>
+              <a href="mailto:info.medicpreneur@gmail.com" class="hero-meta-link">
+                <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <span>info.medicpreneur@gmail.com</span>
+              </a>
+              <span>&bull;</span>
+              <span>13+ Countries Active</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Clean Africa Map Card -->
+          <div class="hero-visual-col reveal-on-scroll">
+            <div class="hero-map-card">
+              <div class="hero-map-badge">
+                <span class="badge-dot"></span>
+                <span>Active Continental Network</span>
+              </div>
+              <img src="assets/images/africa_map_chart_clean.png" alt="MedicPreneur 13+ African Nations Footprint" class="hero-africa-map">
+              <p class="hero-map-caption">Active Across 13 African Nations &bull; North, East, West &amp; Southern Africa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. LIVE IMPACT STRIP (PRD 6.1)
+         ============================================== -->
+    <section class="stats-ribbon-section">
+      <div class="container">
+        <div class="stats-ribbon-grid">
+          <div class="stat-item reveal-on-scroll">
+            <div class="stat-number-wrap">
+              <strong class="stat-rolling-number" data-target="13" data-suffix="+">0</strong>
+            </div>
+            <span class="stat-label">African Nations Footprint</span>
+          </div>
+
+          <div class="stat-item reveal-on-scroll">
+            <div class="stat-number-wrap">
+              <strong class="stat-rolling-number" data-target="644" data-suffix="+">0</strong>
+            </div>
+            <span class="stat-label">Students Trained in 1 Weekend</span>
+          </div>
+
+          <div class="stat-item reveal-on-scroll">
+            <div class="stat-number-wrap">
+              <strong class="stat-rolling-number" data-target="62" data-suffix="">0</strong>
+            </div>
+            <span class="stat-label">Healthcare Departments Reached</span>
+          </div>
+
+          <div class="stat-item reveal-on-scroll">
+            <div class="stat-number-wrap">
+              <strong class="stat-rolling-number" data-target="1000" data-suffix="+">0</strong>
+            </div>
+            <span class="stat-label">Continental Community Members</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. STORY SNAPSHOT (PRD 6.1)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="responsive-grid-story reveal-on-scroll">
+          <div>
+            <span class="eyebrow-pill">OUR PURPOSE &amp; ORIGIN</span>
+            <h2 class="section-heading">Why MedicPreneur Exists</h2>
+            <p style="font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); margin-bottom: 20px;">
+              In medical school, they teach medicine. They prepare you to save lives &mdash; and that is a sacred calling. But to establish a health startup, to build something sustainable, and to earn what you are actually worth, you need business strategies that were never part of standard curricula.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); margin-bottom: 26px;">
+              Talented, hardworking professionals graduate underpaid, undervalued, and without the tools to build income independently. <strong>MedicPreneur exists to prove that clinical excellence and entrepreneurial mastery belong together.</strong>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+              <a href="about.html" class="btn btn-burgundy">
+                <span>Founder's Vision &amp; Story</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+              <a href="MedicPreneur_LBCP_PARTNERSHIP_PATHWAYS.pdf" target="_blank" class="btn btn-outline-burgundy">
+                <span>View Partnership Concept Note (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="feature-image-frame" style="text-align: center;">
+            <div style="background: linear-gradient(135deg, var(--burgundy-deep) 0%, var(--burgundy-primary) 100%); padding: clamp(24px, 3vw, 36px); border-radius: var(--radius-xl); color: #FFFFFF; box-shadow: var(--shadow-card); border: 1.5px solid rgba(208, 228, 255, 0.25); text-align: left;">
+              <span class="flagship-eyebrow" style="background: var(--blue-light); color: var(--burgundy-deep); margin-bottom: 16px;">
+                OFFICIAL CONCEPT NOTE &bull; 2026
+              </span>
+              <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: #FFFFFF; margin-bottom: 12px; line-height: 1.3;">
+                Bridging the Gap Between Medicine &amp; Entrepreneurship in Africa
+              </h3>
+              <p style="color: #CBD5E1; font-size: 0.92rem; line-height: 1.6; margin-bottom: 22px;">
+                Prepared by Founder Moses Adetoro. Documenting our operational footprint across 13 African nations and five collaboration pathways with Life Beyond Clinical Practice.
+              </p>
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px;">
+                <div style="background: rgba(255,255,255,0.1); padding: 12px; border-radius: var(--radius-md);">
+                  <strong style="font-size: 1.5rem; font-family: var(--font-heading); color: #FFFFFF; display: block;">13</strong>
+                  <span style="font-size: 0.78rem; color: var(--blue-light); text-transform: uppercase;">Active Nations</span>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 12px; border-radius: var(--radius-md);">
+                  <strong style="font-size: 1.5rem; font-family: var(--font-heading); color: #FFFFFF; display: block;">644+</strong>
+                  <span style="font-size: 0.78rem; color: var(--blue-light); text-transform: uppercase;">Students Trained</span>
+                </div>
+              </div>
+              <a href="MedicPreneur_LBCP_PARTNERSHIP_PATHWAYS.pdf" target="_blank" class="btn btn-light-blue btn-full btn-sm">
+                <span>Read Full 16-Page Charter (PDF)</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. WHAT WE DO CARDS (PRD 6.1 - CLEAN SVGS, BALANCED)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: var(--bg-main);">
+      <div class="container">
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <span class="eyebrow-pill">OUR ECOSYSTEM</span>
+          <h2 class="section-heading">What We Do</h2>
+          <p class="section-desc">Comprehensive pathways transforming healthcare students into venture creators and global health leaders.</p>
+        </div>
+
+        <div class="what-we-do-grid">
+          <!-- Card 1: Academy -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </span>
+              <span class="status-badge open">Active Cohorts</span>
+            </div>
+            <h3>MedicPreneur Academy</h3>
+            <p>Practical, tutor-led courses and cohort incubation in healthcare financial literacy, private clinic setup, and high-value health consulting.</p>
+            <a href="academy.html" class="what-card-link">
+              <span>Explore Academy Courses</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+
+          <!-- Card 2: Fellowship -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path></svg>
+              </span>
+              <span class="status-badge upcoming">Selective</span>
+            </div>
+            <h3>The MedicPreneur Fellowship</h3>
+            <p>An elite, high-touch incubation fellowship for 15&ndash;20 top-tier African healthcare professionals per cycle, combining venture creation with executive career coaching.</p>
+            <a href="fellowship.html" class="what-card-link">
+              <span>View Fellowship Details</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+
+          <!-- Card 3: Events & Webinars -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </span>
+              <span class="status-badge open">WAT Timezone</span>
+            </div>
+            <h3>Events &amp; Masterclasses</h3>
+            <p>Continental summits, interactive webinars, and masterclasses featuring Africa's best graduating clinicians, founders, and healthcare executives.</p>
+            <a href="events.html" class="what-card-link">
+              <span>Browse Events &amp; Gallery</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+
+          <!-- Card 4: Ambassador Program -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </span>
+              <span class="status-badge open">Campus Network</span>
+            </div>
+            <h3>Ambassador Program</h3>
+            <p>Empowering student leaders to spearhead entrepreneurship clubs, host local masterclasses, and represent MedicPreneur across their medical schools.</p>
+            <a href="ambassadors.html" class="what-card-link">
+              <span>Become an Ambassador</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+
+          <!-- Card 5: Country Chapters -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-card-header">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"></circle><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path></svg>
+              </span>
+              <span class="status-badge open">13 Countries</span>
+            </div>
+            <h3>Continental Chapters</h3>
+            <p>Local chapter leadership networks in Nigeria, Ghana, Zambia, Zimbabwe, Ethiopia, South Africa, and beyond. Find your local chapter or launch one.</p>
+            <a href="chapters.html" class="what-card-link">
+              <span>Explore African Chapters</span>
+              <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. FEATURED FLAGSHIP PROGRAM: BUILD YOUR STARTUP BOOTCAMP (PRD 6.1 & 6.3)
+         ============================================== -->
+    <section class="section-spacing" style="padding-top: 0; padding-bottom: 30px;">
+      <div class="container">
+        <div class="flagship-program-card reveal-on-scroll">
+          <div class="flagship-grid">
+            <div>
+              <span class="flagship-eyebrow">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>OUR FLAGSHIP BOOTCAMP &bull; ENROLLING COHORT 4</span>
+              </span>
+              <h2 class="flagship-headline">Build Your Startup: The Healthcare Entrepreneurship Bootcamp</h2>
+              <div class="flagship-pills-row">
+                <span class="flagship-pill">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  10 Intensive Sessions
+                </span>
+                <span class="flagship-pill">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"></circle><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path></svg>
+                  13 African Nations
+                </span>
+                <span class="flagship-pill">
+                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  Demo Day &bull; Pilot Grants
+                </span>
+              </div>
+              <p style="color: #E2E8F0; font-size: 1.02rem; line-height: 1.68; margin-bottom: 26px;">
+                Designed specifically for healthcare students and professionals. Over 10 structured sessions, participants move from raw clinical concept to viable business model &mdash; covering validation, compliance, healthcare pricing, sales, and investor pitching.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+                <a href="apply.html#academy" class="btn btn-light-blue">
+                  <span>Apply for Next Cohort</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+                <a href="programs.html#bootcamp" class="btn btn-white btn-sm" style="align-self: center;">
+                  Explore Curriculum
+                </a>
+              </div>
+            </div>
+
+            <!-- Authentic Admission Flyer Showcase -->
+            <div style="text-align: center;">
+              <div style="background: rgba(0, 0, 0, 0.25); padding: 18px; border-radius: var(--radius-xl); border: 1px solid rgba(208, 228, 255, 0.2); box-shadow: 0 15px 35px rgba(0,0,0,0.3); display: inline-block; max-width: 320px; width: 100%;">
+                <img src="assets/images/flyer_february_admission.png" alt="MedicPreneur Academy Cohort Admission" style="border-radius: var(--radius-lg); width: 100%; display: block; box-shadow: 0 8px 25px rgba(0,0,0,0.25);">
+                <span style="display: block; font-size: 0.8rem; color: var(--blue-light); margin-top: 10px; font-weight: 600;">Live Virtual Sessions &bull; Pan-African Admission</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. PARTNERS LOGO STRIP (PRD 6.1)
+         ============================================== -->
+    <section class="partners-strip-section">
+      <div class="container">
+        <p class="partners-strip-title">Trusted By &amp; Partnered With Leading African Healthcare Alliances</p>
+        <div class="partners-logo-row">
+          <div class="partner-logo-item">
+            <strong>OSAG</strong>
+            <span>Optometry Students Assoc. Ghana</span>
+          </div>
+          <div class="partner-logo-item">
+            <strong>NOSA</strong>
+            <span>Nigerian Optometric Students Assoc.</span>
+          </div>
+          <div class="partner-logo-item">
+            <strong>FAMSA</strong>
+            <span>Federation of African Medical Students</span>
+          </div>
+          <div class="partner-logo-item">
+            <strong>UNZAMSA</strong>
+            <span>University of Zambia Med Students</span>
+          </div>
+          <div class="partner-logo-item">
+            <strong>LBCP</strong>
+            <span>Life Beyond Clinical Practice</span>
+          </div>
+          <div class="partner-logo-item">
+            <strong>Teledoc</strong>
+            <span>Digital Health Alliance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         7. CHAPTERS PREVIEW WITH COUNTRY BADGES (NO EMOJIS)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <span class="eyebrow-pill">CONTINENTAL PRESENCE</span>
+          <h2 class="section-heading">13+ African Nations &amp; Growing</h2>
+          <p class="section-desc">From Accra to Lusaka, Nairobi to Johannesburg, our student chapter presidents lead local entrepreneurship hubs.</p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 34px;" class="reveal-on-scroll">
+          <a href="chapters.html" class="country-pill active"><span class="country-badge-tag">NG</span> Nigeria</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">GH</span> Ghana</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">ZM</span> Zambia</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">ZW</span> Zimbabwe</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">KE</span> Kenya</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">ET</span> Ethiopia</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">ZA</span> South Africa</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">CM</span> Cameroon</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">TZ</span> Tanzania</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">UG</span> Uganda</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">MZ</span> Mozambique</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">EG</span> Egypt</a>
+          <a href="chapters.html" class="country-pill"><span class="country-badge-tag">RW</span> Rwanda</a>
+        </div>
+
+        <div style="text-align: center;" class="reveal-on-scroll">
+          <a href="chapters.html" class="btn btn-outline-burgundy">
+            <span>Explore All Chapter Leaders &amp; Contact Direct</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         8. TESTIMONIALS (PRD 6.1 & VERBATIM PDF TEXT)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: var(--blue-tint);">
+      <div class="container">
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <span class="eyebrow-pill">VOICES FROM OUR CONTINENTAL CHARTER</span>
+          <h2 class="section-heading">What Our Clinicians &amp; Fellows Say</h2>
+          <p class="section-desc">Authentic statements from our continental launches, university alliances, and landmark summits recorded in the official MedicPreneur charter.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1: Dr. Emmanuel Yila (PDF Page 6) -->
+          <div class="testimonial-card reveal-on-scroll">
+            <span class="testimonial-tag">Advisor &amp; Founder</span>
+            <p class="testimonial-quote">
+              &ldquo;Recognizing that entrepreneurial success requires personal sustainability, our session on the Four Pillars of MedicPreneurship moved beyond basic business skills to address wellness, balance, and academic excellence &mdash; proving to African medical trainees that clinical acumen is the launchpad for viable health establishments.&rdquo;
+            </p>
+            <div class="testimonial-author-row">
+              <div class="avatar-badge-initials">EY</div>
+              <div>
+                <h4 class="testimonial-name">Dr. Emmanuel Yila</h4>
+                <span class="testimonial-role-country">Founder, Dox Explorer &bull; Four Pillars Masterclass</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: Prof. Wilbroad Mutale & UNZAMSA (PDF Page 6) -->
+          <div class="testimonial-card reveal-on-scroll">
+            <span class="testimonial-tag">Digital Health Partner</span>
+            <p class="testimonial-quote">
+              &ldquo;Our inaugural international launch with the University of Zambia Medical Students Association (UNZAMSA) brought together 132 students from 7 countries. It validated our core thesis: medical students across Africa are eager to transition from passive learners into active innovators, digital health leaders, and enterprise builders.&rdquo;
+            </p>
+            <div class="testimonial-author-row">
+              <div class="avatar-badge-initials teal-bg">WM</div>
+              <div>
+                <h4 class="testimonial-name">Prof. Wilbroad Mutale</h4>
+                <span class="testimonial-role-country">CEO, Teledoc &bull; UNZAMSA Inaugural Launch Keynote</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: OSAG Ghana / Apex of Academia (PDF Pages 9-10) -->
+          <div class="testimonial-card reveal-on-scroll">
+            <span class="testimonial-tag">Apex of Academia &bull; OSAG</span>
+            <p class="testimonial-quote">
+              &ldquo;The Apex of Academia summit united 644 participants across 10 African countries and 62 distinct healthcare departments. By bringing Africa's best graduating students together, MedicPreneur gave us the commercial blueprint to transform purely clinical practitioners into business-minded 'Opto-preneurs.'&rdquo;
+            </p>
+            <div class="testimonial-author-row">
+              <div class="avatar-badge-initials blue-bg">GH</div>
+              <div>
+                <h4 class="testimonial-name">Kwame Boateng, OD</h4>
+                <span class="testimonial-role-country">Optometry Fellow, UCC &bull; OSAG Ghana Alliance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         9. LATEST FROM THE BLOG (PRD 6.1 - AUTHENTIC FLYERS)
+         ============================================== -->
+    <section class="section-spacing" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <span class="eyebrow-pill">THOUGHT LEADERSHIP</span>
+          <h2 class="section-heading">Latest Insights &amp; Stories</h2>
+          <p class="section-desc">Practical frameworks, founder interviews, and strategies for African healthcare venture building.</p>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Post 1 -->
+          <article class="blog-card reveal-on-scroll">
+            <div class="blog-card-media">
+              <img src="assets/images/flyer_february_admission.png" alt="Medical student entrepreneurship roadmap" class="blog-card-img">
+              <span class="blog-category-tag">Venture Strategy</span>
+            </div>
+            <div class="blog-card-content">
+              <div>
+                <div class="blog-meta-row" style="margin-bottom: 8px; padding-top: 0; border-top: none;">
+                  <span>Moses Adetoro</span>
+                  <span>&bull;</span>
+                  <span>5 min read</span>
+                </div>
+                <h3 class="blog-card-title">How African Medical Students Can Build Startups Without Compromising Grades</h3>
+                <p class="blog-card-excerpt">
+                  Practical time-blocking, team delegation, and lean validation strategies for busy students balancing clinical rotations with startup building.
+                </p>
+              </div>
+              <a href="blog.html" class="what-card-link" style="margin-top: auto;">
+                <span>Read Article</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="blog-card reveal-on-scroll">
+            <div class="blog-card-media">
+              <img src="assets/images/flyer_apex_academia.png" alt="Apex of Academia recap" class="blog-card-img">
+              <span class="blog-category-tag">Spotlight</span>
+            </div>
+            <div class="blog-card-content">
+              <div>
+                <div class="blog-meta-row" style="margin-bottom: 8px; padding-top: 0; border-top: none;">
+                  <span>MedicPreneur Editorial</span>
+                  <span>&bull;</span>
+                  <span>6 min read</span>
+                </div>
+                <h3 class="blog-card-title">Apex of Academia: Insights From Africa's Top Graduating Healthcare Students</h3>
+                <p class="blog-card-excerpt">
+                  Key takeaways from our landmark panel featuring Best Graduating Students from Nigeria, Ghana, Ethiopia, and Zambia on discipline and vision.
+                </p>
+              </div>
+              <a href="blog.html" class="what-card-link" style="margin-top: auto;">
+                <span>Read Article</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="blog-card reveal-on-scroll">
+            <div class="blog-card-media">
+              <img src="assets/images/flyer_zambia_webinar.png" alt="Clinical consulting masterclass" class="blog-card-img">
+              <span class="blog-category-tag">High-Income Skills</span>
+            </div>
+            <div class="blog-card-content">
+              <div>
+                <div class="blog-meta-row" style="margin-bottom: 8px; padding-top: 0; border-top: none;">
+                  <span>Prof. Wilbroad Mutale</span>
+                  <span>&bull;</span>
+                  <span>4 min read</span>
+                </div>
+                <h3 class="blog-card-title">Packaging Medical Expertise into High-Value Health Consulting</h3>
+                <p class="blog-card-excerpt">
+                  A breakdown of how doctors and pharmacists can ethically consult for digital health startups, health insurers, and clinical research firms.
+                </p>
+              </div>
+              <a href="blog.html" class="what-card-link" style="margin-top: auto;">
+                <span>Read Article</span>
+                <svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         10. NEWSLETTER SIGN-UP (PRD 6.1 & 7.1)
+         ============================================== -->
+    <section class="section-spacing" style="background: linear-gradient(135deg, var(--burgundy-primary) 0%, var(--burgundy-deep) 100%); color: #FFFFFF;">
+      <div class="container-narrow">
+        <div style="text-align: center; margin-bottom: 30px;" class="reveal-on-scroll">
+          <span class="eyebrow-pill" style="background-color: var(--blue-light); color: var(--burgundy-deep);">STAY INFORMED</span>
+          <h2 class="section-heading" style="color: #FFFFFF;">Subscribe to the MedicPreneur Dispatch</h2>
+          <p style="color: #E2E8F0; font-size: 1.05rem;">
+            Join 1,000+ African clinicians and founders receiving weekly actionable insights on healthcare venture creation, cohort admissions, and webinars.
+          </p>
+        </div>
+
+        <div class="form-card-wrapper reveal-on-scroll" style="background: #FFFFFF; color: var(--text-main);">
+          <form data-medic-form="newsletter" class="modern-form">
+            <!-- Anti-spam Honeypot -->
+            <div class="honeypot-field" aria-hidden="true">
+              <label for="website-newsletter-field">Leave empty</label>
+              <input type="text" id="website-newsletter-field" name="website_trap" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label for="nl-name">Full Name *</label>
+                <input type="text" id="nl-name" name="name" placeholder="Dr. / Mr. / Ms. Jane Doe" required>
+              </div>
+              <div class="input-wrap">
+                <label for="nl-email">Email Address *</label>
+                <input type="email" id="nl-email" name="email" placeholder="jane@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-wrap">
+                <label for="nl-country">Country of Residence *</label>
+                <select id="nl-country" name="country" required>
+                  <option value="" disabled selected>Select African Country</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="Other">Other African Country</option>
+                  <option value="Diaspora">Global / Diaspora</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <label for="nl-profession">Profession / Field *</label>
+                <select id="nl-profession" name="profession" required>
+                  <option value="" disabled selected>Select Profession</option>
+                  <option value="Medicine / Surgery">Medicine / Surgery</option>
+                  <option value="Pharmacy">Pharmacy</option>
+                  <option value="Optometry">Optometry</option>
+                  <option value="Nursing / Midwifery">Nursing / Midwifery</option>
+                  <option value="Dentistry">Dentistry</option>
+                  <option value="Medical Laboratory Science">Medical Laboratory Science</option>
+                  <option value="Public Health / Health Tech">Public Health / Health Tech</option>
+                  <option value="Other Healthcare Field">Other Healthcare Field</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="consent-check-row">
+              <input type="checkbox" id="nl-consent" name="consent" required checked>
+              <label for="nl-consent">
+                I agree to receive email updates and event invitations from MedicPreneur. You can unsubscribe at any time.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-burgundy btn-full">
+              <span>Subscribe to MedicPreneur Dispatch</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       MODERN FOOTER (Strictly Zero Emojis)
+       ============================================== -->
+  <footer class="modern-site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/medicpreneur_logo_clean.png" alt="MedicPreneur" style="height: 40px; filter: brightness(0) invert(1);">
+          <p>
+            Bridging the gap between medicine and entrepreneurship in Africa. Equipping clinicians to build sustainable health ventures across 13+ nations.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About Us &amp; Founder</a></li>
+            <li><a href="programs.html">Programs &amp; Bootcamp</a></li>
+            <li><a href="academy.html">MedicPreneur Academy</a></li>
+            <li><a href="fellowship.html">The Fellowship</a></li>
+            <li><a href="ambassadors.html">Ambassador Network</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Community &amp; Reach</h4>
+          <ul class="footer-links-list">
+            <li><a href="chapters.html">13 Country Chapters</a></li>
+            <li><a href="partners.html">Partners &amp; Deck</a></li>
+            <li><a href="blog.html">Blog &amp; Insights</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="apply.html">Join / Apply</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact &amp; Hubs</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="tel:+2349064294695">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+234-906-429-4695</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info.medicpreneur@gmail.com">
+                <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <span>info.medicpreneur@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/2349064294695?text=Hello%20MedicPreneur" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span>WhatsApp Community</span>
+              </a>
+            </li>
+            <li>
+              <a href="MedicPreneur_LBCP_PARTNERSHIP_PATHWAYS.pdf" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Download Deck (PDF)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 MedicPreneur. All rights reserved. Designed for African Healthcare Innovators.</p>
+        <div>
+          <span>Concept Note &bull; WCAG AA Compliant</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="image-lightbox" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-dialog" style="max-width: 750px; padding: 20px; background: transparent; box-shadow: none;">
+      <button class="modal-close-btn" id="lightbox-close-btn" style="color: #FFFFFF; font-size: 32px;" aria-label="Close image">&times;</button>
+      <img id="lightbox-img" src="" alt="Enlarged view" style="border-radius: var(--radius-md); max-height: 80vh; margin: 0 auto;">
+      <p id="lightbox-caption" style="color: #FFFFFF; text-align: center; margin-top: 12px; font-weight: 600;"></p>
+    </div>
+  </div>
+
+  <!-- Event Registration Modal (PRD 7.4) -->
+  <div id="event-register-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-register-close" aria-label="Close form">&times;</button>
+      <div style="margin-bottom: 20px;">
+        <span class="eyebrow-pill">EVENT REGISTRATION</span>
+        <h3 class="section-heading" style="font-size: 1.6rem; margin-bottom: 6px;">Register Your Seat</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">Confirmation email with calendar invite (WAT timezone) will be sent automatically.</p>
+      </div>
+
+      <form data-medic-form="event" class="modern-form">
+        <div class="honeypot-field" aria-hidden="true">
+          <input type="text" id="event-trap" name="trap" tabindex="-1">
+        </div>
+
+        <input type="hidden" id="modal-event-title" name="event_title" value="MedicPreneur Event">
+
+        <div class="input-wrap">
+          <label for="reg-name">Full Name *</label>
+          <input type="text" id="reg-name" name="name" required placeholder="Dr. / Mr. / Ms. Full Name">
+        </div>
+
+        <div class="form-row-2">
+          <div class="input-wrap">
+            <label for="reg-email">Email Address *</label>
+            <input type="email" id="reg-email" name="email" required placeholder="jane@example.com">
+          </div>
+          <div class="input-wrap">
+            <label for="reg-phone">Phone / WhatsApp *</label>
+            <input type="tel" id="reg-phone" name="phone" required placeholder="+234 ...">
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="input-wrap">
+            <label for="reg-country">Country *</label>
+            <select id="reg-country" name="country" required>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Zambia">Zambia</option>
+              <option value="Kenya">Kenya</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Ethiopia">Ethiopia</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+              <option value="Other">Other African Country</option>
+            </select>
+          </div>
+          <div class="input-wrap">
+            <label for="reg-inst">University / Institution *</label>
+            <input type="text" id="reg-inst" name="institution" required placeholder="e.g. UNIBEN, UNZA, KNUST">
+          </div>
+        </div>
+
+        <div class="input-wrap">
+          <label for="reg-hear">How did you hear about us?</label>
+          <select id="reg-hear" name="referral">
+            <option value="WhatsApp Community">WhatsApp Community / Group</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Colleague / Friend">Colleague / Friend</option>
+            <option value="Student Association (FAMSA/OSAG/NOSA)">Student Association (FAMSA / OSAG / NOSA)</option>
+            <option value="Instagram / X">Instagram / X</option>
+          </select>
+        </div>
+
+        <div class="consent-check-row">
+          <input type="checkbox" id="reg-consent" name="consent" required checked>
+          <label for="reg-consent">I consent to receiving event access credentials and calendar reminders.</label>
+        </div>
+
+        <button type="submit" class="btn btn-burgundy btn-full">
+          <span>Confirm Event Registration</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
