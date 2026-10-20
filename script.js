@@ -18,7 +18,8 @@ function initApp() {
     ['applicationTrack', initApplicationTrackSelector],
     ['lightbox', initLightbox],
     ['eventModal', initEventModal],
-    ['forms', initForms]
+    ['forms', initForms],
+    ['curriculumTabs', initCurriculumTabs]
   ];
 
   initializers.forEach(([name, fn]) => {
@@ -438,14 +439,14 @@ function initStatusToggles() {
         fellowshipClosedBox.style.display = 'none';
         if (fellowshipBadge) {
           fellowshipBadge.className = 'status-badge open';
-          fellowshipBadge.innerHTML = '<span class="badge-dot"></span> Applications Open';
+          fellowshipBadge.textContent = 'Applications Open';
         }
       } else {
         fellowshipOpenBox.style.display = 'none';
         fellowshipClosedBox.style.display = 'block';
         if (fellowshipBadge) {
           fellowshipBadge.className = 'status-badge closed';
-          fellowshipBadge.innerHTML = '<span class="badge-dot"></span> Applications Closed';
+          fellowshipBadge.textContent = 'Applications Closed';
         }
       }
     });
@@ -463,14 +464,14 @@ function initStatusToggles() {
         ambassadorClosedBox.style.display = 'none';
         if (ambassadorBadge) {
           ambassadorBadge.className = 'status-badge open';
-          ambassadorBadge.innerHTML = '<span class="badge-dot"></span> Applications Open';
+          ambassadorBadge.textContent = 'Applications Open';
         }
       } else {
         ambassadorOpenBox.style.display = 'none';
         ambassadorClosedBox.style.display = 'block';
         if (ambassadorBadge) {
           ambassadorBadge.className = 'status-badge closed';
-          ambassadorBadge.innerHTML = '<span class="badge-dot"></span> Applications Open Soon';
+          ambassadorBadge.textContent = 'Applications Open Soon';
         }
       }
     });
@@ -660,3 +661,30 @@ function showToast(message, type = 'info') {
     setTimeout(() => toast.remove(), 300);
   }, 4500);
 }
+
+/* --------------------------------------------------------------------------
+   14. Curriculum Timeline Tabs Handler
+   -------------------------------------------------------------------------- */
+function initCurriculumTabs() {
+  const tabBtns = document.querySelectorAll('.curriculum-tab-btn');
+  const panes = document.querySelectorAll('.curriculum-pane');
+  if (!tabBtns.length || !panes.length) return;
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      tabBtns.forEach(b => b.classList.remove('active'));
+      panes.forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const targetPane = document.getElementById(targetId);
+      if (targetPane) {
+        targetPane.classList.add('active');
+      }
+    });
+  });
+}
+
+
+
+

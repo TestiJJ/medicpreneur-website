@@ -34,7 +34,7 @@ Active across **13+ African countries** including Nigeria, Ghana, Kenya, Rwanda,
    - **`ambassadors.html`**: Campus ambassador network across 13+ nations with application portal.
    - **`events.html`**: Benin City Flagship Summit countdown, webinars, and RSVP modal system.
    - **`chapters.html`**: Country chapter directors, local initiatives, and chapter onboarding.
-   - **`partners.html`**: Corporate, hospital, and NGO partnership tiers with deck download.
+   - **`partners.html`**: Corporate, hospital, and NGO strategic partnership pathways and inquiry.
    - **`blog.html`**: Clinical entrepreneurship insights, founder case studies, and newsletter signup.
    - **`faq.html`**: Interactive accordion FAQ categorized by program, funding, and membership.
    - **`contact.html`**: Regional hub contacts, interactive inquiry form, and WhatsApp hotline.
